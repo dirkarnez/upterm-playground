@@ -6,7 +6,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - run: bash <(curl -sL http://corvo.myseu.cn/scripts/upterm.sh)
+    - shell: bash
+      run: ./upterm.sh
 
     - run: |
         while :
